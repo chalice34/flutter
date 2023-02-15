@@ -433,12 +433,6 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                       .fromSTEB(0, 20, 0, 24),
                                                   child: FFButtonWidget(
                                                     onPressed: () async {
-                                                      final user =
-                                                          await signInAnonymously(
-                                                              context);
-                                                      if (user == null) {
-                                                        return;
-                                                      }
                                                       await Navigator.push(
                                                         context,
                                                         MaterialPageRoute(
